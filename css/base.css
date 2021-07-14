@@ -347,7 +347,7 @@ textarea {
  *
  * ------------------------------------------------------------------- */
 .row {
-  width: 94%;
+  width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -360,10 +360,10 @@ textarea {
 }
 
 .row .row {
-  width: auto;
+  /* width: auto; */
   max-width: none;
-  margin-left: -20px;
-  margin-right: -20px;
+  /* margin-left: -20px;
+  margin-right: -20px; */
 }
 
 [class*="col-"], .bgrid {

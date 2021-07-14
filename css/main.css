@@ -147,7 +147,7 @@ p.lead {
   font-family: "montserrat-regular", sans-serif;
   font-size: 2rem;
   line-height: 1.8;
-  color: #4f4f4f;
+  color: #3f4d57;
   margin: 1rem 5rem 3.6rem;
 }
 @media only screen and (max-width: 768px) {
@@ -883,12 +883,12 @@ input::-moz-focus-inner {
  *  08. common and reusable styles 
  *
  * ------------------------------------------------------------------- */
-.section-intro {
+#contact .section-intro {
   text-align: center;
   position: relative;
-  margin-bottom: 1.5rem;
+  margin-bottom: 11.5rem;
 }
-.section-intro h1 {
+#contact .section-intro h1 {
   width: 550px;
   font-family: "librebaskerville-bold", serif;
   font-size: 4.8rem;
@@ -899,25 +899,26 @@ input::-moz-focus-inner {
   margin-left: auto;
   padding-bottom: 1rem;
 }
-.section-intro h3 {
-  font-family: "montserrat-bold", sans-serif;
-  font-size: 1.8rem;
+#contact .section-intro h3 {
+  position:absolute;
+  font-family: "librebaskerville", serif;
+  font-size: 14.8rem;
   line-height: 1.667;
-  color: rgba(242, 242, 242, 0.5);
+  color: #ffffff52;
   text-transform: uppercase;
   letter-spacing: .3rem;
   margin-bottom: 1.2rem;
 }
-.section-intro .lead {
+#contact .section-intro .lead {
   font-family: "montserrat-regular", sans-serif;
   font-size: 1.8;
   line-height: 1.833;
 }
-.section-intro.with-bottom-sep {
+#contact .section-intro.with-bottom-sep {
   padding-bottom: 4.2rem;
   position: relative;
 }
-.section-intro.with-bottom-sep::after {
+#contact .section-intro.with-bottom-sep::after {
   display: inline-block;
   height: 1px;
   width: 200px;
@@ -930,31 +931,31 @@ input::-moz-focus-inner {
  * section-intro
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
-  .section-intro h1 {
+  #contact .section-intro h1 {
     font-size: 4.4rem;
   }
-  .section-intro .lead {
+  #contact .section-intro .lead {
     font-size: 1.7rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  .section-intro h1 {
+  #contact .section-intro h1 {
     font-size: 4rem;
   }
-  .section-intro h3 {
+  #contact .section-intro h3 {
     font-size: 1.7rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  .section-intro h1 {
+  #contact .section-intro h1 {
     font-size: 3.4rem;
   }
-  .section-intro h3 {
+  #contact .section-intro h3 {
     font-size: 1.7rem;
   }
 }
 @media only screen and (max-width: 500px) {
-  .section-intro h3 {
+  #contact .section-intro h3 {
     font-size: 1.5rem;
   }
 }
@@ -2821,47 +2822,40 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 #contact {
-  background-color: #000;
-  background-image: url(../img/opticalnomad-EJ4qfFp1g8Q-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  background-color: #e6dfd3;
   padding: 12rem 0 12rem;
   position: relative;
 }
-#contact .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: .75;
-  background-color: rgba(179, 179, 179, 0.5);
-}
 #contact .section-intro h1 {
-  color: #e6dfd3;
+  color: #3f4d57;
 }
-#contact .section-intro h3 {
-  color: rgba(149, 149, 149, 0.7);
+#contact h3 {
+  position:absolute;
+  width:100%;
+  text-align: center;
+  font-family: "librebaskerville", serif;
+  font-size: 23.8rem;
+  line-height: 1.667;
+  color: #ffffff52;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  margin-bottom: 1.2rem;
 }
-#contact .section-intro p.lead {
+#contact .section-intro .contacttxt {
   color: #3f4d57;
   font-family: "librebaskerville", serif;
   font-size:1.7rem;
+  margin-bottom:18rem;
 }
 .contact-content {
   max-width: 1024px;
-  margin-top: 3rem;
-  color: #e6dfd3;
   z-index: 600;
   position: relative;
 }
 .contact-content h5 {
-  color: #e6dfd3;
+  color: #3f4d57;
   margin-bottom: 5.4rem;
-  font-size: 1.7rem;
+  font-size: 3.7rem;
   font-family: "librebaskerville", serif;
 }
 .contact-content h6 {
@@ -2874,6 +2868,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-bottom: 3rem;
 }
 #contact form .form-field {
+  margin:0 0.5rem;
   position: relative;
 }
 #contact form .form-field:before, #contact form .form-field:after {
@@ -2882,6 +2877,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #contact form .form-field:after {
   clear: both;
+}
+#contact form .form-field .mail div{
+  margin-right:0.5rem;
 }
 #contact form .form-field label {
   font-family: "montserrat-bold", sans-serif;
@@ -2909,19 +2907,19 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   content: "";
 }
 #contact form ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: #3f4d5770;
 }
 #contact form :-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: #3f4d5770;
 }
 #contact form ::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: #3f4d5770;
 }
 #contact form :-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: #3f4d5770;
 }
 #contact form .placeholder {
-  color: rgba(255, 255, 255, 0.3) !important;
+  color: #3f4d5770 !important;
 }
 #contact input[type="text"],
 #contact input[type="password"],
@@ -2930,19 +2928,19 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   width: 100%;
   color: #3f4d57;
   margin-bottom: 3.6rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.25);
 }
 #contact input[type="text"]:focus,
 #contact input[type="password"]:focus,
 #contact input[type="email"]:focus {
-  color: #e6dfd3;
+  color: #3f4d5770;
 }
 #contact textarea {
   min-height: 21rem;
   padding: 1.8rem 2rem;
 }
 #contact textarea:focus {
-  color: #FFFFFF;
+  color: #3f4d5770;
 }
 #contact button.submitform {
   font-size: 1.5rem;
@@ -3001,6 +2999,84 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 .oldie #submit-loader .text-loader {
   display: block;
+}
+
+@media screen and (max-width: 1260px) {
+  #contact h3{
+  font-size: 20.8rem;
+  }
+  #contact .contact-content .col-seven{
+    margin-left:3rem;
+  }
+}
+@media screen and (max-width: 1100px){
+  #contact h3{
+    font-size: 17.8rem;
+    }
+}
+@media screen and (max-width: 890px){
+  #contact h3{
+    font-size: 13.8rem;
+    }
+}
+@media screen and (max-width: 768px){
+  #contact h3{
+    font-size: 8.8rem;
+    position:static;
+    }
+    #contact .section-intro .contacttxt{
+      font-size:1.5rem;
+      padding:0 1rem;
+    }
+    #contact .contact-content .col-seven{
+      margin:0;
+    }
+    #contact form .form-field{
+      margin:0;
+    }
+    #contact form .form-field .mail div{
+      margin:0;
+    }
+}
+@media screen and (max-width: 600px){
+  #contact .section-intro h1{
+    width:400px;
+  }
+}
+@media screen and (max-width: 400px){
+  #contact{
+    padding:10rem 0 0;
+  }
+  #contact h3{
+    font-size: 5.8rem;
+    margin-bottom: -4.8rem;
+  }
+  #contact .section-intro{
+    margin:0;
+  }
+  #contact .section-intro h1{
+    width:300px;
+    font-size:3rem;
+    margin-bottom:5rem;
+  }
+  #contact .section-intro .contacttxt{
+    font-size:1.25rem;
+    line-height:2.5rem;
+    margin-bottom: 2rem;
+  }
+  .contact-content{
+    width:350px;
+  }
+  #contact input[type="text"], #contact input[type="password"], #contact input[type="email"], #contact textarea{
+    margin-bottom: 1.6rem;
+  }
+  input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select{
+    height: 4.5rem;
+    padding: 0.5rem 1rem;
+  }
+  #contact textarea{
+    padding: 0.5rem 1rem;
+  }
 }
 
 /* --------------------------------------------------------------- 

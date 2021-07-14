@@ -31,28 +31,42 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-</head><!-- contact
+</head>
+
+<body id="top">
+		<!-- header 
+		================================================== -->
+		<header> 
+			<div class="wrapper row0">
+				<div id="topbar" class="hoc clear"> 
+					
+					<div class="header-logo">
+						<a href="index.html">〇〇クリニック</a>
+					</div>
+					
+				</div>
+			</div>
+		</header>
+
+<!-- contact
    ================================================== -->
    <section id="contact">
-
-    <div class="overlay"></div>
-  
-      <div class="row narrow section-intro with-bottom-sep animate-this">
+    <h3>Contact</h3>
+      <div class="narrow section-intro with-bottom-sep animate-this">
          <div class="col-twelve">
-           <h3>Contact</h3>
+           
            <h1>お問い合わせ</h1>
   
-           <p class="lead">当クリニックでは、携帯電話・スマートフォン・パソコンのインターネットから診察の予約が可能です。ぜひご利用ください。<br>
+          <p class="contacttxt">当クリニックでは、携帯電話・スマートフォン・パソコンから診察の予約が可能です。<br>
+          ぜひご利用ください。<br>
           診察の時刻は多少前後することがあります。<br>	
-          当日、予約なく来院されても大丈夫ですが、予約の方を優先に診させていただきますので、なにとぞご了承ください。</p>
+          当日は予約なく来院されても大丈夫ですが、予約の方を優先にさせていただきますので、何卒ご了承ください。</p>
          </div> 
        </div> <!-- end section-intro -->
   
        <div class="row contact-content">
   
          <div class="col-seven tab-full animate-this">
-  
-           <h5>お問い合わせ</h5>
   
               <!-- form -->
               <form name="contactForm" id="contactForm" method="post">     			
@@ -61,21 +75,21 @@
                     <input name="contactName" type="text" id="contactName" placeholder="お名前" value="" minlength="2" required="">
                  </div>
   
-                 <div class="row">
-                     <div class="col-six tab-full">
-                       <div class="form-field">
+                 <div class="form-field">
+                     <div class="col-six tab-full mail">
+                       <div class="">
                          <input name="contactEmail" type="email" id="contactEmail" placeholder="メールアドレス" value="" required="">
                        </div>		      			   
                     </div>
                     <div class="col-six tab-full">	            
-                      <div class="form-field">
+                      <div class="">
                         <input name="contactSubject" type="text" id="contactSubject" placeholder="件名" value="">
                       </div>		     				   
                     </div>
                  </div>
                                            
                    <div class="form-field">
-                    <textarea name="contactMessage" id="contactMessage" placeholder="メッセージ" rows="10" cols="50" required=""></textarea>
+                    <textarea name="contactMessage" id="contactMessage" placeholder="希望診察日時・症状" rows="10" cols="50" required=""></textarea>
                   </div> 
   
                    <div class="form-field">
@@ -106,93 +120,86 @@
     </div> <!-- end row contact-content -->
       
   </section> <!-- end contact -->
-  <!-- footer
-   ================================================== -->
-	<footer>
-    <div class="footer-main">
+  <!-- フッター
+		================================================== -->
+		<footer>
 
-    <div class="row">  
+			<div class="footer-main">
+				<div class="row">  
+					<div class="col-five tab-full footer-about animate-this">       
 
-       <div class="col-five tab-full footer-about">       
+						<a href="#"><img src="images/logo.png" width="40px" height="22px"> 〇〇クリニック</a>
 
-           <h4 class="h05">〇〇クリニック.</h4>
+						<ul class="list-main animate-this">
+							<li><a href="index.html#home" class="fading-1">ホーム</a></li>
+							<li><a href="index.html#testimonials" class="fading-1">院長</a></li>
+							<li><a href="index.html#about" class="fading-1">コンセプト</a></li>
+							<li><a href="index.html#portfolio" class="fading-1">院内風景</a></li>
+							<li><a href="index.html#news" class="fading-1">お知らせ</a></li>
+							<li><a href="index.html#location" class="fading-1">アクセス</a></li>
+						</ul>
 
-           <p>Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Proin eget tortor risus.</p>	            
 
-       </div> <!-- end footer-about -->
+					</div> <!-- end footer-about -->
 
-       <div class="col-three tab-full footer-social">
+					<div class="col-three tab-full footer-social">
 
-         <h4 class="h05">Follow Us.</h4>
+							<h4 class="h05 animate-this">Menu</h4>
 
-         <ul class="list-links">
-           <li><a href="#">Facebook</a></li>
-         <li><a href="#">Twitter</a></li>
-         <li><a href="#">Instagram</a></li>
-         <li><a href="#">Behance</a></li>
-         <li><a href="#">Dribble</a></li>						
-       </ul>
+						<ul class="list-sub animate-this">
+							<li><a href="#" class="fading-1">緑内障検</a></li>
+							<li><a href="#" class="fading-1">眼底検診</a></li>
+							<li><a href="#" class="fading-1">黄斑検診</a></li>
+							<li><a href="#" class="fading-1">白内障検診</a></li>
+							<li><a href="#" class="fading-1">屈折異常検診</a></li>						
+							<li><a href="#" class="fading-1">老眼検診</a></li>						
+							<li><a href="#" class="fading-1">眼精疲労検診</a></li>						
+						</ul>
 
-       </div> <!-- end footer-social -->  
+					</div> <!-- end footer-social -->  
 
-       <div class="col-four tab-full footer-subscribe end">
+					<div class="col-four tab-full footer-subscribe end">
 
-         <h4 class="h05">Get Notified.</h4>
+							<h4 class="h05 animate-this">Contact</h4>
 
-         <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa.</p>
+						<div class="animate-this">
+							<p><i class="fa fa-phone"></i> +00 (123) 456 7890</p>
+							<p><i class="fa fa-envelope-o"></i> someone@〇〇クリニックsite.com</p>
+						</div>
+											
+					</div> <!-- end footer-subscribe -->      	    
 
-         <div class="subscribe-form">
-       
-           <form id="mc-form" class="group" novalidate="true">
+				</div> <!-- end row -->
 
-           <input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="type email" required=""> 
-      
-            <!-- <input type="submit" name="subscribe" > -->
-            <button><i class="icon-mail"></i></button>
-      
-            <label for="mc-email" class="subscribe-message"></label>
-   
-         </form>
+				<div class="copyright">
+					<span>©〇〇 Clinic</span> 	         	
+				</div>		               
 
-         </div>
-                    
-       </div> <!-- end footer-subscribe -->      	    
+			</div> <!-- end footer-main -->
 
-     </div> <!-- end row -->
-
-  </div> <!-- end footer-main -->
-
-  <div class="footer-bottom">
-
-     <div class="row">
-
-       <div class="col-twelve">
-         <div class="copyright">
-            <span>© Copyright 〇〇クリニック 2016.</span> 
-            <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>		         	
-          </div>		               
-       </div>
-
-     </div>   	
-
-   </div> <!-- end footer-bottom -->
-
-   <div id="go-top">
-    <a class="smoothscroll" title="Back to Top" href="#top">
-      <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
-    </a>
- </div>		
-</footer>
-
-<div id="preloader"> 
-   <div id="loader"></div>
-</div> 
-
-<!-- Java Script
-================================================== --> 
-<script src="js/jquery-2.1.3.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+				<div id="go-top">
+					<a class="smoothscroll" title="Back to Top" href="#top">
+						<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+					</a>
+				</div>		
+				
+				<div id="preloader"> 
+					<div id="loader"></div>
+				</div> 
+				
+				<!-- Java Script
+					================================================== --> 
+					<script src="js/jquery-2.1.3.min.js"></script>
+					<script src="js/plugins.js"></script>
+					<script src="js/main.js"></script>
+					
+		</footer>
+		
+		<!-- Java Script
+		================================================== --> 
+		<script src="js/jquery-2.1.3.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
 
 </body>
 
