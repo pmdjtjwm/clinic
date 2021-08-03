@@ -258,7 +258,7 @@
 			              	setTimeout( function () {
 									el.addClass(animationEfx + ' animated');
 									el.removeClass('item-animate');
-								}, ctr * 30);
+								}, ctr * 300);
 
 							});								
 						}, 100);
@@ -267,7 +267,7 @@
 					// trigger once only
 	       		this.destroy(); 
 				}, 
-				offset: '85%'
+				offset: '70%'
 			}); 
 		}
 
